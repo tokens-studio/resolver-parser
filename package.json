@@ -60,7 +60,6 @@
     "trailingComma": "all"
   },
   "dependencies": {
-    "@bundled-es-modules/memfs": "^4.17.0",
-    "path-unified": "^0.2.0"
+    "@bundled-es-modules/memfs": "^4.17.0"
   }
 }

@@ -4,7 +4,7 @@ import { parser } from '../src/parser.js';
 
 describe('resolver', () => {
   it('should work', async () => {
-    const resolverPath = path.resolve(import.meta.dirname, 'fixtures', 'tokens', 'resolver.json');
+    const resolverPath = path.resolve(import.meta.dirname, 'fixtures', 'basic', 'resolver.json');
     const result = await parser(resolverPath);
 
     expect(result).toEqual([
