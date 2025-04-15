@@ -1,0 +1,8 @@
+{
+  "spacing": {
+    "$type": "dimension",
+    "scale": {
+      "$value": 4
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "button": {
+    "background": {
+      "$type": "color",
+      "$value": "{colors.background.primary}"
+    },
+    "padding": {
+      "$type": "color",
+      "$value": "{dimension.2}"
+    }
+  }
+}

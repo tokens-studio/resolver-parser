@@ -1,0 +1,1 @@
+"@tokens-studio/configs/prettier"
