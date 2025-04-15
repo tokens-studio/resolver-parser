@@ -14,6 +14,7 @@ npm install @tokens-studio/resolver-parser
 ```js
 import { parser } from '@tokens-studio/resolver-parser';
 
+// either absolute path or relative path: we will assume relative to process.cwd() in NodeJS
 const result = await parser('tokens/resolver.json');
 
 // or alternatively, when already read and JSON parsed to a JS Object

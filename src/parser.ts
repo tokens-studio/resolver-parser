@@ -58,14 +58,7 @@ export async function parser(resolverPathOrData: string | Resolver, fs?: Volume)
     if (!fs) {
       fs = await import('node:fs');
     }
-    // for browser, take posix, otherwise for NodeJS use main module
-    // which will use win32 for Windows and posix otherwise
-    const { posix, win32 } = await import('path-unified');
-    const path = window !== undefined ? posix : process?.platform === 'win32' ? win32 : posix;
-    const contents = (await fs.promises.readFile(
-      path.resolve(resolverPathOrData),
-      'utf-8',
-    )) as string;
+    const contents = (await fs.promises.readFile(resolverPathOrData, 'utf-8')) as string;
     resolver = JSON.parse(contents);
   } else {
     resolver = resolverPathOrData;
